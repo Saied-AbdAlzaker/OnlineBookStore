@@ -56,7 +56,7 @@ export default function Book() {
           modules={[Navigation, Pagination]}
           className="mySwiper"
         >
-          {products?.slice(0,4).map((book, index) => {
+          {products?.slice(0, 4).map((book, index) => {
             return (
               <SwiperSlide>
                 <div className="bookContent">
@@ -97,12 +97,6 @@ export default function Book() {
                   </Box>
                   <Box>
                     {book?.image ? (
-                      // <CardMedia
-                      //   component="img"
-                      //   height="300"
-                      //   image={`${imgPath}/${book?.image}`}
-                      //   alt={book?.name}
-                      // />
                       <CardMedia
                         component="img"
                         height="500"
