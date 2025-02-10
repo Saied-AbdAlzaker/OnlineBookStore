@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", serif;
+}
+.imgContainer{
+  height: 100vh;
+  background-image: url(assets/Image/authImage.png);
+  background-size: cover;
+}
+.bgNavbar {
+  background-color: #393280;
+}
+a {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.logo {
+  width: 15%;
+}
+.bookContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ef6b4a;
+  position: absolute;
+  bottom: -15%;
+  left: 5%;
+}
+.lineFeature {
+  width: 5%;
+  height: 2px;
+  background-color: #ef6b4a;
+  position: absolute;
+  top: 37%;
+  left: 55%;
+}
+.featureContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.featureTime {
+  display: flex;
+  flex-direction: column;
+}
+.btnBox {
+  margin-top: 15%;
+}
+.newsLetter {
+  width: 30%;
+  position: absolute;
+  bottom: 20%;
+  left: 35%;
+}
+.lineHorizontal::after {
+  content: "";
+  background-color: #c0c0c0;
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  right: 90%;
+  top: 30px;
+}
+.lineHorizontal::before {
+  content: "";
+  background-color: #c0c0c0;
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  left: 90%;
+  top: 30px;
+}
+.relaseLink {
+    color: #EF6B4A;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ef6b4a !important;
+  /* size: 10px !important; */
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #ef6b4a !important;
+}
+@media only screen and (max-width: 768px) {
+  .line {
+    display: none;
+  }
+  .bookContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featureContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnBox {
+    margin-top: 5%;
+    text-align: end;
+  }
+}
